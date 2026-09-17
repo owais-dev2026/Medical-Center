@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز دمشق التخصصي الطبي | النخبة الطبية</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                            dark: '#0f172a',
+                            accent: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(12, 74, 110, 0.92) 0%, rgba(2, 132, 199, 0.85) 100%), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-medical-dark text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-map-marker-alt text-medical-500 ml-1"></i> دمشق، سوريا</span>
+                <span><i class="fas fa-clock text-medical-500 ml-1"></i> يومياً: 9 صباحاً - 10 مسائاً</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/963939916838" target="_blank" class="hover:text-medical-accent transition"><i class="fab fa-whatsapp text-medical-accent"></i> +963 939 916 838</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl font-bold shadow-md shadow-medical-600/30">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-lg sm:text-xl text-medical-dark leading-none">مركز دمشق</h1>
+                    <span class="text-xs text-medical-600 font-semibold tracking-wider">التخصصي الطبي المتطور</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#home" class="hover:text-medical-600 transition">الرئيسية</a>
+                <a href="#services" class="hover:text-medical-600 transition">تخصصاتنا</a>
+                <a href="#doctors" class="hover:text-medical-600 transition">نخبة الأطباء</a>
+                <a href="#about" class="hover:text-medical-600 transition">عن المركز</a>
+            </nav>
+            <div>
+                <a href="#booking" class="bg-medical-accent hover:bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-500/20 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> حجز موعد سريع
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 lg:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl">
+                <span class="bg-white/10 text-medical-100 border border-white/20 text-xs sm:text-sm px-3.5 py-1.5 rounded-full font-semibold inline-block mb-6 backdrop-blur-sm">
+                    ✨ معايير عالمية لرعاية صحية متكاملة في قلب دمشق
+                </span>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                    نعتني بصحتك وبابتسامتك <br><span class="text-medical-100 underline decoration-medical-accent">بأحدث التقنيات الطبية</span>
+                </h1>
+                <p class="text-slate-200 text-base sm:text-lg mb-8 leading-relaxed">
+                    نخبة من الاستشاريين والأخصائيين وأحدث تجهيزات التشخيص والعلاج تحت سقف واحد، لنقدم لك ولعائلتك رعاية استثنائية تليق بكم.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#booking" class="bg-medical-accent hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-emerald-600/30 transition flex items-center gap-3 text-lg">
+                        <i class="fab fa-whatsapp text-2xl"></i> احجز موعدك الآن واتساب
+                    </a>
+                    <a href="#services" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-4 rounded-xl font-bold backdrop-blur-sm transition">
+                        استكشف التخصصات
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Departments -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-medical-600 font-bold text-sm bg-medical-50 px-3 py-1 rounded-full uppercase tracking-wider">أقسامنا الطبية</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-medical-dark mt-3">تخصصات شاملة لرعاية متكاملة</h2>
+                <p class="text-slate-500 mt-2">نقدم مجموعة واسعة من الخدمات الطبية التشخيصية والعلاجية المتقدمة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">قسم طب وجراحة الأسنان</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">زراعة الأسنان، التجميل الرقمي، التقويم، وعلاج اللثة بأحدث الأجهزة الليزرية.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">أمراض القلب والشرايين</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">تخطيط الجهد، إيمبولس القلب، إيكو دوبلر الملون ومتابعة ضغط الدم المزمن.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-allergies"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">الجلدية وتجميل الليزر</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">علاج الأمراض الجلدية، الفراكشنال ليزر، البوتكس والفيلر، والعناية المتقدمة بالبشرة.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">العيون وجراحتها</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">فحص النظر الشمولي، علاج المياه البيضاء والزرقاء، وتصحيح البصر.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">الأطفال وحديثي الولادة</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">متابعة النمو والتطور، برامج اللقاحات الشاملة، وعلاج أمراض الطفولة الحادة.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-medical-100 text-medical-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-dark mb-3">المخْبَر والتحاليل الطبية</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">تحاليل مخبرية دقيقة وشاملة بأحدث التقنيات المخبرية العالمية مع نتائج سريعة.</p>
+                    <a href="#booking" class="text-medical-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">اختر هذا القسم <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-medical-600 font-bold text-sm bg-medical-100 px-3 py-1 rounded-full uppercase tracking-wider">نخبة الكادر الطبي</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-medical-dark mt-3">أفضل الاستشاريين في خدمتكم</h2>
+                <p class="text-slate-500 mt-2">خبرات عريقة واعتمادات دولية لضمان أعلى مستويات التشخيص والعلاج.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="h-64 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="د. سامر الأحمد" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute bottom-3 right-3 bg-medical-dark/80 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">استشاري أمراض القلب</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-medical-dark mb-1">د. سامر الأحمد</h3>
+                        <p class="text-slate-500 text-sm mb-4">دكتوراه في أمراض القلب والشرايين - جامعة باريس</p>
+                        <a href="#booking" class="w-full block text-center bg-medical-50 hover:bg-medical-600 hover:text-white text-medical-600 font-bold py-2.5 rounded-xl transition">حجز موعد مع الطبيب</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="h-64 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594824813576-928d13264426?auto=format&fit=crop&w=600&q=80" alt="د. ريم الخطيب" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute bottom-3 right-3 bg-medical-dark/80 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">استشارية الجلدية والتجميل</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-medical-dark mb-1">د. ريم الخطيب</h3>
+                        <p class="text-slate-500 text-sm mb-4">البورد الأمريكي في الأمراض الجلدية وتجميل الليزر</p>
+                        <a href="#booking" class="w-full block text-center bg-medical-50 hover:bg-medical-600 hover:text-white text-medical-600 font-bold py-2.5 rounded-xl transition">حجز موعد مع الطبيبة</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="h-64 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="د. إياد الحكيم" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute bottom-3 right-3 bg-medical-dark/80 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">استشاري جراحة وزراعة الأسنان</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-medical-dark mb-1">د. إياد الحكيم</h3>
+                        <p class="text-slate-500 text-sm mb-4">ماجستير زراعة الأسنان الرقمية - ألمانيا</p>
+                        <a href="#booking" class="w-full block text-center bg-medical-50 hover:bg-medical-600 hover:text-white text-medical-600 font-bold py-2.5 rounded-xl transition">حجز موعد مع الطبيب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive WhatsApp Booking Section -->
+    <section id="booking" class="py-20 bg-medical-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto bg-slate-900/90 border border-slate-800 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-xl">
+                <div class="text-center mb-10">
+                    <span class="bg-medical-accent/20 text-medical-accent text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">حجز موعد إلكتروني فوري</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold mt-3">احجز موعدك الآن عبر الواتساب</h2>
+                    <p class="text-slate-400 text-sm mt-2">املأ البيانات أدناه وسيتم تحويلك مباشرة لتأكيد الموعد مع مركزنا في دمشق.</p>
+                </div>
+
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">الاسم الكامل للمريض *</label>
+                            <input type="text" id="patientName" required placeholder="أدخل اسمك الكريم" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-medical-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">رقم الهاتف / الموبايل *</label>
+                            <input type="tel" id="patientPhone" required placeholder="رقم هاتفك للتواصل" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-medical-500 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">القسم الطبي المطلوب *</label>
+                            <select id="department" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-medical-500 transition">
+                                <option value="قسم طب وجراحة الأسنان">قسم طب وجراحة الأسنان</option>
+                                <option value="قسم أمراض القلب والشرايين">قسم أمراض القلب والشرايين</option>
+                                <option value="قسم الجلدية وتجميل الليزر">قسم الجلدية وتجميل الليزر</option>
+                                <option value="قسم العيون وجراحتها">قسم العيون وجراحتها</option>
+                                <option value="قسم الأطفال وحديثي الولادة">قسم الأطفال وحديثي الولادة</option>
+                                <option value="قسم المخبر والتحاليل الطبية">قسم المخبر والتحاليل الطبية</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">التاريخ المفضل للموعد *</label>
+                            <input type="date" id="appointmentDate" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-medical-500 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-slate-300 mb-2">ملاحظات إضافية أو تفاصيل الحالة (اختياري)</label>
+                        <textarea id="notes" rows="3" placeholder="اكتب أي تفاصيل إضافية تود إخبار الطبيب بها..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-medical-500 transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-medical-accent hover:bg-emerald-600 text-white font-black py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-3 text-lg">
+                        <i class="fab fa-whatsapp text-2xl"></i> تأكيد وإرسال الحجز عبر الواتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-right">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-medical-600 text-white flex items-center justify-center font-bold">
+                            <i class="fas fa-heartbeat text-sm"></i>
+                        </div>
+                        <span class="text-white font-bold text-lg">مركز دمشق التخصصي الطبي</span>
+                    </div>
+                    <p class="text-xs text-slate-500">العنوان: دمشق، سوريا | كافة الحقوق محفوظة © 2026</p>
+                </div>
+                <div class="flex items-center gap-6 text-sm">
+                    <a href="#home" class="hover:text-white transition">الرئيسية</a>
+                    <a href="#services" class="hover:text-white transition">التخصصات</a>
+                    <a href="#doctors" class="hover:text-white transition">الأطباء</a>
+                    <a href="#booking" class="hover:text-white transition">حجز موعد</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for WhatsApp Integration -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('patientName').value;
+            const phone = document.getElementById('patientPhone').value;
+            const department = document.getElementById('department').value;
+            const date = document.getElementById('appointmentDate').value;
+            const notes = document.getElementById('notes').value;
+
+            const targetNumber = '963939916838';
+
+            let message = `مرحباً، أود حجز موعد جديد في مركز دمشق الطبي:%0a` +
+                          `----------------------------------%0a` +
+                          `👤 *اسم المريض:* ${name}%0a` +
+                          `📱 *رقم الهاتف:* ${phone}%0a` +
+                          `🏥 *القسم الطبي:* ${department}%0a` +
+                          `📅 *التاريخ المطلوب:* ${date}%0a`;
+
+            if (notes.trim() !== '') {
+                message += `📝 *ملاحظات الحالة:* ${notes}%0a`;
+            }
+
+            message += `----------------------------------%0a` +
+                       `يرجى تأكيد الموعد. وشكراً جزيلاً.`;
+
+            const whatsappUrl = `https://wa.me/${targetNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
